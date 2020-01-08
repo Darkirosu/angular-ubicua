@@ -1,0 +1,38 @@
+<div id="f1_container">
+    <div id="f1_card" class="shadow">
+        <div class="front face">
+            <div class="conteinerteachercard">
+                <div class="img">
+                    <img class="imageLogo" src="{{this.img}}"/>
+                </div>
+                <div class="name">
+                    <output>{{this.name}}</output>
+                </div>
+                <div class="surname">
+                    <output>{{this.surname}}</output>
+                </div>
+                <div class="job">
+                    <output>{{this.job}}</output>
+                </div>
+                <div class="age">
+                    <output>Edad {{this.age}}</output>
+                </div>
+                
+            </div>
+        </div>
+        <div class="back face center">
+            <div class="conteinerteachercard">
+                <div class="botones">    
+                    <div class="buscar">
+                        <button class="bbuscar" [routerLink]="['/course', id ]">BUSCAR CURSOS</button>
+                    </div>
+                </div>
+                <div class="conexion">
+                    <img class="imgred" (click)="goToLink(linkedin)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png"/>
+                    <img class="imgred" (click)="goToLink(instagram)" src="https://image.flaticon.com/icons/png/128/174/174855.png"/>
+                    <img class="imgred" (click)="goToLink(twitter)" src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Twitter_NEW.png"/>                 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

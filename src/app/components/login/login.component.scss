@@ -1,0 +1,61 @@
+.login{
+    padding: 12px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 5px 9px 13px 1px rgb(35, 42, 80);
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 4px 2px;
+    border: 5px solid rgb(2, 2, 2);
+    background-color: #484d55;
+    background-image: linear-gradient(0deg, #484d55 0%, #486fb9 44%);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    .user{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .password{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    .add:hover {
+        background-color: #4b78bd;
+        color: #090563;
+        font-size: 16px;   
+    }
+    .boton{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .add{
+        background-color: #090563;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border: 2px solid white;
+        display: inline-block;
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+        border-radius: 16px;
+        
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,83 @@
+<div class="information">
+    
+    <h1 class="nombre">
+        <b><p>{{this.loginuser.name}} {{this.loginuser.surname}}</p></b>
+    </h1>
+    <div class="mode">
+        <div class="seat">
+            <div class="title">
+                <b><p>In time:</p></b>
+            </div>
+            <div class="temperature">
+                <div class="box">
+                    <b><output>Temperature</output></b>
+                    <b><output>{{this.temperature.temperature}}</output></b>
+                </div>
+            </div>
+            <div class="chair">
+                <div class="pressure">
+                    <div class="pressureline">
+                        <div class="pressurex">
+                            <div class="saw">
+                                <b><output>Pressure1</output></b>
+                                <b><output>{{this.pressure.pressure1}}</output></b>
+                            </div>                        
+                        </div>
+                        <div class="pressurex">
+                            <div class="saw">
+                                <b><output>Pressure2</output></b>
+                                <b><output>{{this.pressure.pressure2}}</output></b>
+                            </div>                       
+                        </div>
+                    </div>
+                    <div class="pressureline">
+                        <div class="pressurex">
+                            <div class="saw">
+                                <b><output>Pressure3</output></b>
+                                <b><output>{{this.pressure.pressure3}}</output></b>
+                            </div>                         
+                        </div>
+                        <div class="pressurex">
+                            <div class="saw">
+                                <b><output>Pressure4</output></b>
+                                <b><output>{{this.pressure.pressure4}}</output></b>
+                            </div>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="data">
+            <div class="modi">
+                <div class="update">
+                    <button class="login" (click)="ngOnInit()">ACTUALIZAR</button>
+                </div>
+                <div class="conf">
+                    <div class="changemode">
+                        <b><output>MODE: </output></b>
+                        <input type="checkbox"  [(ngModel)]="manual">   
+                    </div>
+                    <div class="temperaturemod">
+                        <b><output>Temperature</output></b>
+                        <input type="text"  [(ngModel)]="temperaturedata">
+                    </div>
+                    <div class="active">
+                        <b><output>ACTIVE: </output></b>
+                        <input type="checkbox"  [(ngModel)]="active">     
+                    </div>
+                    <div class="send">
+                        <button class="login" (click)="btnsend()">ENVIAR</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="more">
+                <button class="login" (click)="btnClick()">MAS DATOS</button>
+            </div>
+        </div>
+    </div>
+    <div class="move"> 
+            <button class="login" (click)="btnClick()">{{this.nameboton}}</button>
+    </div>
+</div>

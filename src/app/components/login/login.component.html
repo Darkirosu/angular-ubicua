@@ -1,0 +1,21 @@
+<div class="login">
+    <h1 class="">
+        <b><p>Conectarse</p></b>
+    </h1>
+    <div class="user">
+        <b><output>Usuario: </output></b>
+    </div>
+    <div class="user">
+        <input type="text"  [(ngModel)]="user">
+    </div>
+    <div class="password">
+        <b><output>Contrasena: </output></b>
+    </div>
+    <div class="password">
+        <input type="password" [(ngModel)]="password">
+    </div>
+    <div class="boton">
+        <button class="add" (click)="btnClickclean()">BORRAR</button>
+        <button class="add" (click)="btnClicklogin()">CONECTARSE</button>
+    </div>
+</div>
